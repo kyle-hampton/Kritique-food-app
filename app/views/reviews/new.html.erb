@@ -1,0 +1,16 @@
+<h1>Reviews#new</h1>
+<p>Find me in app/views/reviews/new.html.erb</p>
+
+
+
+<%= form_for Review.new do |r|%>
+  <div class="">
+    Leave a review<%= r.text_area :review %>
+  </div>
+  <div class="">
+    Give a score<%= r.text_field :score %>
+  </div>
+
+<%= r.hidden_field :food_id, value: @food_id %>
+<%= r.submit%>
+<% end %>

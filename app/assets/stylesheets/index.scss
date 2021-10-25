@@ -1,0 +1,55 @@
+.index-wrapper{
+  margin: 30px auto;
+  width: 55%;
+  background-color: #2C6173;
+  text-align: center;
+  border-radius: 60px 60px 0px 60px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+.image-food{
+  width: 300px;
+  height: 300px;
+  margin: 20px auto;
+  border-radius: 300px;
+  border: 2px solid #E86D1F;
+  margin: 10px;
+}
+.image-food:hover{
+  background-color: #E86D1F;
+  opacity: .8;
+}
+.food-list-header{
+  text-align: center;
+}
+#food-image{
+  margin: 10px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: url('thai-som-tum.jpg.jpg');
+}
+.food-decription{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 100px auto;
+}
+.food-name{
+  text-align: center;
+}
+.hr{
+  margin: 0 auto;
+  width: 20%;
+}
+.food-breakdown{
+  font-size: 20px;
+  text-align: center;
+}
+.show-image{
+  width: 500px;
+  height: 500px;
+  margin: 10px auto;
+  border-radius: 300px;
+  border: 10px solid #2C6173;
+}

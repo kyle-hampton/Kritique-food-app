@@ -1,0 +1,143 @@
+<div class="food-breakdown">
+  <h1>Yum new food what is it?</h1>
+</div>
+
+<%= form_for Food.new do |f|%>
+  <div class="">
+    <div class="food-breakdown">
+      Food: <%= f.text_field :food_name%>
+    </div>
+    <div class="hr">
+      <hr>
+    </div>
+    <div class="food-breakdown">
+      Food type: <%= f.text_field :food_type%>
+    </div>
+    <div class="hr">
+      <hr>
+    </div>
+    <div class="food-breakdown">
+      Food description: <%= f.text_field :food_description%>
+    </div>
+    <div class="hr">
+      <hr>
+    </div>
+    <div class="food-breakdown">
+
+      location: <%= f.text_field :location, id: "pac-input", class: "controls", type: "text", placeholder: "Search Box" %>
+      <%= hidden_field :location, value: @location %>
+
+      <div id="map"></div>
+    </div>
+    <div class="hr">
+      <hr>
+    </div>
+    <div class="food-breakdown">
+      Food review: <%= f.text_area :food_review%>
+    </div>
+    <div class="hr">
+      <hr>
+    </div>
+    <div class="food-breakdown">
+      Food score: <%= f.select :food_original_score, [1,2,3,4,5,6,7,8,9,10]%>
+    </div>
+
+    <div class="food-breakdown">
+      <%= f.file_field :image %>
+      <% if f.object.image? %>
+      <%= image_tag f.object.image.thumb.url %>
+      <% end %>
+    </div>
+
+
+
+
+  </div>
+  <div class="food-breakdown">
+    <%= f.submit%>
+  </div>
+
+<% end %>
+
+
+
+
+<script>
+// This example adds a search box to a map, using the Google Place Autocomplete
+// feature. People can enter geographical searches. The search box will return a
+// pick list containing a mix of places and predicted search terms.
+
+// This example requires the Places library. Include the libraries=places
+// parameter when you first load the API. For example:
+// <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
+
+function initAutocomplete() {
+var map = new google.maps.Map(document.getElementById('map'), {
+center: {lat: 39.9526, lng: -75.1652},
+zoom: 13,
+mapTypeId: 'roadmap'
+});
+
+// Create the search box and link it to the UI element.
+var input = document.getElementById('pac-input');
+var searchBox = new google.maps.places.SearchBox(input);
+map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+
+// Bias the SearchBox results towards current map's viewport.
+map.addListener('bounds_changed', function() {
+searchBox.setBounds(map.getBounds());
+});
+
+var markers = [];
+// Listen for the event fired when the user selects a prediction and retrieve
+// more details for that place.
+searchBox.addListener('places_changed', function() {
+var places = searchBox.getPlaces();
+
+if (places.length == 0) {
+  return;
+}
+
+// Clear out the old markers.
+markers.forEach(function(marker) {
+  marker.setMap(null);
+});
+markers = [];
+
+// For each place, get the icon, name and location.
+var bounds = new google.maps.LatLngBounds();
+places.forEach(function(place) {
+  if (!place.geometry) {
+    console.log("Returned place contains no geometry");
+    return;
+  }
+  var icon = {
+    url: place.icon,
+    size: new google.maps.Size(71, 71),
+    origin: new google.maps.Point(0, 0),
+    anchor: new google.maps.Point(17, 34),
+    scaledSize: new google.maps.Size(25, 25)
+  };
+
+
+  // Create a marker for each place.
+  markers.push(new google.maps.Marker({
+    map: map,
+    icon: icon,
+    title: place.name,
+    position: place.geometry.location
+  }));
+
+  if (place.geometry.viewport) {
+    // Only geocodes have viewport.
+    bounds.union(place.geometry.viewport);
+  } else {
+    bounds.extend(place.geometry.location);
+  }
+});
+console.log(markers)
+map.fitBounds(bounds);
+});
+}
+
+</script>

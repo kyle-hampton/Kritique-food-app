@@ -1,0 +1,26 @@
+<h1>Reviews#index</h1>
+
+<% @review.each do |r|%>
+
+  <div class="">
+    <div class="">
+      <strong> Review:</strong> <%= r.review %>
+    </div>
+    <br>
+
+    <div class="">
+      <strong>Score:</strong> <%= r.score%>
+    </div>
+
+    <div class="">
+      <strong>User:</strong> <%= r.user_id%>
+    </div>
+
+    <div class="">
+      <strong>Date:</strong> <%= r.created_at%>
+    </div>
+
+    <hr>
+
+  </div>
+<% end %>

@@ -1,0 +1,35 @@
+.brand-wrapper{ //brand wrapper
+  display: flex;
+  flex-direction: row;
+  padding-top: 25px;
+  font-size: 25px;
+  margin-left: 10px;
+}
+.branding{ //brand name
+  color: white;
+  padding-top: 5px;
+  padding-left: 5px;
+  text-shadow: 5px 2px 2px black;
+}
+.brand-logo{ //brand picture
+  width: 40px;
+  height: 40px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: url('shrimp.png');
+}
+.tagline-wrapper{
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  font-size: 65px;
+  text-shadow: 2px 2px 40px black;
+  padding-top: 90px;
+}
+.tagline{
+  margin: 0 auto;
+}
+
+.Critique-explained{
+  text-align: center;
+}

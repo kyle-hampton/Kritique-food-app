@@ -1,0 +1,43 @@
+.login-form{
+  width: 30%;
+  height: 400px;
+  border-radius: 10px;
+  background-color: #2C6173;
+  text-align: center;
+  margin: 100px auto;
+  color: white;
+  border: 2px solid #E86D1F;
+  box-shadow: 2px 2px 2px black;
+}
+.background-login{
+  overflow: auto;
+  width: 100%;
+  margin: 0px auto;
+  height: 780px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: url('cafe-1.jpg');
+}
+
+// brand login
+.brand-wrapper-login{ //brand wrapper
+  display: flex;
+  flex-direction: row;
+  padding-top: 25px;
+  font-size: 30px;
+  margin: 0 auto;
+  justify-content: center;
+}
+.branding-login{ //brand name
+  color: white;
+  padding-top: 5px;
+  padding-left: 5px;
+  text-shadow: 5px 2px 2px black;
+}
+.brand-logo-login{ //brand picture
+  width: 50px;
+  height: 50px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: url('shrimp.png');
+}

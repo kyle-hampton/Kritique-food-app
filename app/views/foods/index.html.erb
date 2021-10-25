@@ -1,0 +1,21 @@
+<div class="food-list-header">
+  <h1>Foods list</h1>
+</div>
+
+  <% @food.each do |f| %>
+  <div class="index-wrapper">
+    <a href="/foods/<%= f.id %>">
+    <% if f.image.thumb.url == nil%>
+      <div> <img class="image-food" id="food-image" alt=""> </div>
+      <% else %>
+      <div> <img class="image-food" src="<%= f.image.thumb.url %>" alt=""> </div>
+    <% end %>
+    <div class="food-decription">
+      <div class=""> <a href="/foods/<%= f.id %>"><strong>Food:</strong> <%= f.food_name %> </a> </div>
+      <div><strong>Type:</strong><%= f.food_type %></div>
+      <div class=""><strong>location:</strong> <%= f.location %></div>
+
+    </div>
+    </a>
+  </div>
+<strong></strong>  <% end %>
