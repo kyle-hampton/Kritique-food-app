@@ -3,7 +3,11 @@
 
 <img src=".\app\assets\images\kritique-food-app.png" width="100%" height="400px">
 <br>
+<img src=".\app\assets\images\kritique-login-form.png" width="100%" height="400px">
+<br>
 <img src=".\app\assets\images\kritique-form-1.png" width="100%" height="400px">
+<br>
+
 
 <h1>Kritique</h1>
 
