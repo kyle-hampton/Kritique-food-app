@@ -1,9 +1,9 @@
 # README
 <h1><a href="https://kritique-food-app.herokuapp.com/">Kritique Site Link</a></h1>
 
-<img src=".\app\assets\images\kritique-food-app.png" width="100%" height="450px">
+<img src=".\app\assets\images\kritique-food-app.png" width="100%" height="400px">
 <br>
-<img src=".\app\assets\images\kritique-form-1.png" width="100%" height="450px">
+<img src=".\app\assets\images\kritique-form-1.png" width="100%" height="400px">
 
 <h1>Kritique</h1>
 
