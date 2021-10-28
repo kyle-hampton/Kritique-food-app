@@ -37,6 +37,8 @@ gem 'carrierwave'
 
 gem 'devise'
 
+gem 'uglifier'
+
 # your secret keys safe
 gem 'dotenv-rails'
 
