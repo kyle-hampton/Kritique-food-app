@@ -1,8 +1,9 @@
 # README
+<h1><a href="">Kritique Site Link</a></h1>
 
 <img src=".\app\assets\images\kritique-food-app.png" width="100%" height="450px">
 
-<img src=".\app\assets\images\kritique-form-1.png" width="100%" height="450px">" width="100%" height="450px">
+<img src=".\app\assets\images\kritique-form-1.png" width="100%" height="450px">
 
 <h1>Kritique</h1>
 
@@ -12,30 +13,30 @@
 
 <h2>Details</h2>
 <h3>Ruby version</h3>
-<h4>- ruby 3.0.2p107</h4>
+<h4><br>- ruby 3.0.2p107</h4>
 
 <h3>System dependencies</h3>
-<h4>- activerecord</h4>
-<h4>- byebug</h4>
-<h4>- capybara (>= 3.26)</h4>
-<h4>- carrierwave/<h4>
-<h4>- devise<h4>
-<h4>- dotenv-rails</h4>
-<h4>- jbuilder (~> 2.7)</h4>
-<h4>- listen</h4>
-<h4>- pg</h4>
-<h4>- puma (~> 5.0)</h4>
-<h4>- rack-mini-profiler (~> 2.0)</h4>
-<h4>- rails (~> 6.1.4, >= 6.1.4.1)</h4>
-<h4>- rails_12factor</h4>
-<h4>- sass-rails (>= 6)</h4>
-<h4>- selenium-webdriver</h4>
-<h4>- turbolinks (~> 5)</h4>
-<h4>- tzinfo-data</h4>
-<h4>- uglifier</h4>
-<h4>- web-console (>= 4.1.0)</h4>
-<h4>- webdrivers</h4>
-<h4>- webpacker (~> 5.0)</h4>
+<h4><br>- activerecord</h4>
+<h4><br>- byebug</h4>
+<h4><br>- capybara (>= 3.26)</h4>
+<h4><br>- carrierwave/<h4>
+<h4><br>- devise</h4>
+<h4><br>- dotenv-rails</h4>
+<h4><br>- jbuilder (~> 2.7)</h4>
+<h4><br>- listen</h4>
+<h4><br>- pg</h4>
+<h4><br>- puma (~> 5.0)</h4>
+<h4><br>- rack-mini-profiler (~> 2.0)</h4>
+<h4><br>- rails (~> 6.1.4, >= 6.1.4.1)</h4>
+<h4><br>- rails_12factor</h4>
+<h4><br>- sass-rails (>= 6)</h4>
+<h4><br>- selenium-webdriver</h4>
+<h4><br>- turbolinks (~> 5)</h4>
+<h4><br>- tzinfo-data</h4>
+<h4><br>- uglifier</h4>
+<h4><br>- web-console (>= 4.1.0)</h4>
+<h4><br>- webdrivers</h4>
+<h4><br>- webpacker (~> 5.0)</h4>
 
 
 
