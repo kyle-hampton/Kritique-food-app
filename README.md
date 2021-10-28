@@ -2,7 +2,7 @@
 
 <img src=".\app\assets\images\kritique-food-app.png" width="100%" height="450px">
 
-<img src=".\app\assets\images\<img src=".\app\assets\images\kritique-form-1.png" width="100%" height="450px">" width="100%" height="450px">
+<img src=".\app\assets\images\kritique-form-1.png" width="100%" height="450px">" width="100%" height="450px">
 
 <h1>Kritique</h1>
 
